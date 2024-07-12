@@ -30,20 +30,20 @@ class SidePanel extends ConsumerWidget {
     // Use the provider factory with the unique id
     final widthProvider = sidePanelWidthProvider(id);
     double storedWidth = ref.watch(widthProvider);
-    //debugPrint('$id storedWidth: $storedWidth');
+    debugPrint('$id storedWidth: $storedWidth');
 
     // Initialize with default width if not set
     if (storedWidth == 0.0) {
-      //debugPrint('setting default width: $id');
+      debugPrint('setting default width: $id');
       storedWidth = defaultWidth;
     }
 
     return LayoutBuilder(builder: (context, constraints) {
-      //debugPrint('Constraints: $constraints');
+      debugPrint('Constraints: $constraints');
 
       final Rect updatedRect =
           Rect.fromLTWH(0, 0, storedWidth, constraints.maxHeight);
-      //debugPrint('Updated Rect: $updatedRect');
+      debugPrint('Updated Rect: $updatedRect');
 
       return SizedBox(
         width: storedWidth,
@@ -83,7 +83,7 @@ class SidePanel extends ConsumerWidget {
                 ref.read(widthProvider.notifier).state = result.rect.width;
               },
               contentBuilder: (context, rect, flip) {
-                //debugPrint('contentBuilder $rect');
+                debugPrint('contentBuilder $rect');
                 return child;
               },
             ),
