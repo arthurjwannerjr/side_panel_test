@@ -20,10 +20,11 @@ packages:
   box_transform:
     dependency: transitive
     description:
-      name: box_transform
-      sha256: "99744e5f5edb2056128d3846894bfa6d4a02b5a4ef42657cf957a345731cff2c"
-      url: "https://pub.dev"
-    source: hosted
+      path: "packages\\box_transform"
+      ref: fix-27
+      resolved-ref: "1177ba5cc18fd730da9761ed3dc721e00f8235fc"
+      url: "https://github.com/hyper-designed/box_transform"
+    source: git
     version: "0.4.4"
   characters:
     dependency: transitive
@@ -73,10 +74,11 @@ packages:
   flutter_box_transform:
     dependency: "direct main"
     description:
-      name: flutter_box_transform
-      sha256: "2b844096d2cb14b7d9444abc972aa57233c0eeab92ca60c92b8211b49c103158"
-      url: "https://pub.dev"
-    source: hosted
+      path: "packages/flutter_box_transform"
+      ref: fix-27
+      resolved-ref: "1177ba5cc18fd730da9761ed3dc721e00f8235fc"
+      url: "https://github.com/hyper-designed/box_transform"
+    source: git
     version: "0.4.4"
   flutter_lints:
     dependency: "direct dev"
